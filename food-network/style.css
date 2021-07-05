@@ -1,0 +1,72 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#nav-bar {
+  display: flex;
+  height: 10vh;
+  background-image: linear-gradient(45deg, orange, salmon);
+  justify-content: space-around;
+}
+#nav-bar h2 {
+  margin-top: 17px;
+  color: rgba(0, 0, 0, 0.651);
+}
+
+nav {
+  margin-top: 22px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0px 20px;
+  color: rgba(0, 0, 0, 0.651);
+}
+
+#desc {
+  display: flex;
+  margin-top: 50px;
+}
+
+.half-width {
+  width: 50%;
+  padding: 0px 50px;
+}
+.half-width h1 {
+  font-size: 45px;
+  margin-top: 95px;
+  color: rgba(0, 0, 0, 0.651);
+  font-weight: bold;
+}
+
+.half-width h1 span {
+  color: rgb(255, 136, 0);
+}
+
+.half-width p {
+  color: gray;
+  padding: 20px 0px 40px 0px;
+}
+
+.half-width img {
+  width: 100%;
+}
+.link-btn {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.651);
+  background-image: linear-gradient(45deg, orange, salmon);
+  padding: 10px 30px;
+  border-radius: 10px;
+  font-weight: 700;
+}
