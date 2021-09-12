@@ -93,13 +93,14 @@ const updateTotal = () => {
 
 
 
-// get product details
+// load products details
 const detailsBtn = id => {
   fetch(`https://fakestoreapi.com/products/${id}`)
     .then(res => res.json())
   .then(data => displayOnUi(data))
 };
 
+// display product details on UI
 const displayOnUi = details => {
   console.log(details);
   const productDiv = document.getElementById('product-div');
@@ -112,10 +113,10 @@ const displayOnUi = details => {
     <p class="product-title">${details.title}</p>
     <P>${details.description}</P>
     <P class="product-price">Price: $ ${details.price}</P>
-    <p><i class="fas fa-star-half-alt"></i> ${details.rating.rate}</p>
+    <p class="product-rating">Rating <i class="fas fa-star-half-alt"></i> ${details.rating.rate}</p>
   </div>
 </div>
   </hr>
   `
   productDiv.appendChild(div)
-}
+};

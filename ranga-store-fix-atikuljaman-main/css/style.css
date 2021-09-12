@@ -2,6 +2,8 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+
+/* search field styles */
 .search-field {
   border: none;
   border-radius: 50px;
@@ -42,12 +44,14 @@ body {
 .product-desc {
   margin-left: 50px;
 }
+
 .product-title,
-.product-price {
+.product-price,
+.product-rating {
   font-weight: bold;
   font-size: 20px;
 }
-
+/* all products styles */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -86,6 +90,16 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+.btn-icon {
+  display: flex;
+  justify-content: space-between;
+}
+i {
+  color: gold;
+}
+
+/* responsive styles */
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -109,12 +123,4 @@ body {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-.btn-icon {
-  display: flex;
-  justify-content: space-between;
-}
-i {
-  color: gold;
 }
